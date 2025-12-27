@@ -11,3 +11,11 @@ type RespShallowLocations struct {
 	Previous *string          `json:"previous"`
 	Results  []LocationResult `json:"results"`
 }
+
+type RespExploreLocations struct {
+	PokemonEncounters []struct {
+		Pokemon struct {
+			Name string `json:"name"`
+		} `json:"pokemon"`
+	} `json:"pokemon_encounters"`
+}
